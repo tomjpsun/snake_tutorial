@@ -16,4 +16,19 @@ Day 1
 這裡的 ${PROJECT_NAME} 就是 snake --- 在第二行指定了.
 ${SDL2_LIBRARIES} 與 ${SDL2_INCLUDE_DIR} 都是 find_package(SDL2) 發現的
 
+
+看到 01_hello_SDL.cpp 可以觀察 啟用 SDL 的順序是：
+
+	SDL_Init()
+	SDL_CreateWindow()
+
+	用 SDL 畫圖 ...
+
+	畫畫動作後，強迫更新畫面，讓前面畫的圖出現
+	SDL_UpdateWindowSurface()
+
+	SDL_DestroyWindow()
+	SDL_Quit()
+
+
 #
