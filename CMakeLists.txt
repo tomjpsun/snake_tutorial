@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 # set the project name
 project(snake)
-add_executable( ${PROJECT_NAME} 02_getting_an_image_on_the_screen.cpp )
+add_executable( ${PROJECT_NAME} 03_event_driven_programming.cpp )
 
 # Find the SDL2 library
 find_package(SDL2 REQUIRED)
